@@ -144,3 +144,42 @@ ul.hero_section--social-icons{
 .about-section_skill>li>strong{
     color: #fff;
 }
+/* Work-Section */
+.work-section{
+    background-color: var(--dark-primary);
+    color: #fff;
+    padding: 60px;
+    text-align: center;
+}
+.work-section_items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.work-section_box>span>i{
+    margin-bottom: 20px;
+    background-color: #12bdff;
+    padding: 10px;
+    border-radius: 50%;
+}
+.work-section_box>span>i:hover{
+    background-color: var(--dark-primary);
+}
+.work-section_box:hover{
+    background-color: var(--dark-primary);
+    cursor: pointer;
+}
+.work-section_box{
+    margin-top: 10px;
+    background-color: #121a22;
+    max-width: 20%;
+    padding: 30px;
+    text-align: left;
+}
+.work-section_dec{
+    margin-bottom: 10px;
+}
+.work-section_box>div>a{
+    text-decoration: none;
+    color: burlywood;
+}
