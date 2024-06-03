@@ -19,9 +19,9 @@
         <div>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Skills</a></li>
+                <li><a href="#aboutus">About</a></li>
+                <li><a href="#contactus">Contact us</a></li>
+                <li><a href="#mywork">Skills</a></li>
             </ul>
         </div>
         <div><button class="dark-button">Download CV</button></div>
@@ -45,7 +45,7 @@
             <div><img src="./assets/Images/hari.png" alt="Hariharan_Protofolio" width="450px"></div>
         </section>
         <!--About Hero section 2  -->
-        <section class="about-section">
+        <section class="about-section" id="aboutus">
             <img src="./assets/Images/protofolio image.png" alt="about me">
             <div class="about-section_dec">
                 <h4>I am a Fullstack <span>Developer</span></h4>
@@ -70,8 +70,8 @@
             </div>
         </section>
         <!-- My work -->
-        <section class="work-section">
-            <h4 class="work-section_tittle">My Skills</h4>
+        <section class="work-section" id="mywork">
+            <h4 class="work-section_tittle">My <span> Skills</span></h4>
             <div class="work-section_items">
                 <div class=" work-section_box">
                     <span><i class="fa-solid fa-display"></i></span>
@@ -99,7 +99,29 @@
                 </div>
             </div>
         </section>
+        <!-- contact -->
+        <section class="contact-section" id="contactus">
+            <h4>Contact <span>Me</span></h4>
+            <form>
+                <div>
+                    <input type="text" name="fullname" placeholder="Fullname" title="Fullname">
+                </div>
+                <div>
+                    <input type="text" name="Subject" placeholder="Subject">
+                </div>
+                <div>
+                    <textarea name="brief" rows="5">Write your feedback about my skills</textarea>
+                </div>
+                <div>
+                    <button class="btn hero-buttons ">Send Messages</button>
+                </div>
+            </form>
+        </section>
     </main>
+    <footer>
+        <p>Copyrights &copy;2024 <a href="https://github.com/HARIHARANM555" target="_blank">Hariharan_M</a> Alrights
+            Reserved</p>
+    </footer>
 </body>
 
 </html>

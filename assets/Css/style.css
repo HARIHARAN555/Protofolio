@@ -4,6 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --prmary:#12bdff;
     --dark-primary: #1b1f24;
@@ -156,6 +162,12 @@ ul.hero_section--social-icons{
     justify-content: space-around;
     margin-top: 20px;
 }
+.work-section_tittle{
+    font-weight: 900;
+}
+.work-section_tittle>span{
+    color: var(--prmary);
+}
 .work-section_box>span>i{
     margin-bottom: 20px;
     background-color: #12bdff;
@@ -182,4 +194,35 @@ ul.hero_section--social-icons{
 .work-section_box>div>a{
     text-decoration: none;
     color: burlywood;
+}
+/* Contact section */
+.contact-section{
+    text-align: center;
+    background-color: #22282f;
+    color: #fff;
+    padding: 60px;
+}
+.contact-section div> input,textarea{
+    background-color: #c4c4c4;
+    outline: none;
+    font-family: sans-serif !important;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    width: 350px;
+    border-radius: 5px;
+    color: gray;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: 20px;
+    color: gray;
+    background-color: var(--dark-primary);
+    font-size: 12px;
+}
+footer a{
+    text-decoration: none;
+    color: var(--prmary);
 }
