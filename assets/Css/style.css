@@ -18,6 +18,10 @@ html{
 }
 /* Header */
 body>header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-around;
     background-color: var(--dark-primary);
@@ -66,7 +70,7 @@ section.hero-section{
     color: #fff;
     display: flex;
     align-items: center;
-    padding: 20px 120px 0 240px ;
+    padding: 90px 120px 0 240px ;
     font-size: var(--header-font-size);
 }
 .hero-section__tittle>span{
@@ -225,4 +229,51 @@ footer{
 footer a{
     text-decoration: none;
     color: var(--prmary);
+}
+
+/* Moblie view style */
+@media only screen and (max-width: 320px){
+    /* Header */
+    header{
+        flex-direction: column;
+    }
+    header *{
+        margin-bottom: 10px;
+    }
+    body header {
+        position: relative;
+    }
+    header ul{
+        flex-direction: column;
+    }
+    .dark-button{
+        padding: 10px;
+    }
+
+    /* Hero section */
+    section.hero-section{
+        flex-direction: column;
+        /* margin-top: 250px; */
+        padding: 20px;
+    }
+    section.about-section{
+        flex-direction: column;
+        padding: 40px;
+    }
+    .work-section_items{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+
+    }
+    .work-section_box{
+        width: 100%;
+        margin-right: 0;
+        max-width: unset;
+    }
+    .contact-section form input,textarea{
+        width: 100%;
+        margin-right: 0;
+        
+    }
 }
