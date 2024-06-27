@@ -64,6 +64,72 @@ function resetForm(){
     selectedRow = null;
 }
 
+// Popups addnotes
+
+var overlays = document.querySelector(".overlay")
+
+var clicked = document.getElementById("clicks")
+clicked.addEventListener("click",function(){
+    alert("Hello")
+})
+clicked.addEventListener("mouseover",function(){
+    alert("Hello")
+})
+
+function show(){
+    popupboxes.style.display="block"
+    overlays.style.display="block"
+
+}
+function closepopup(){
+    popupboxes.style.display="none"
+    overlays.style.display="none"
+
+}
+
+// Notes popup
+var popupoverlay = document.querySelector(".popupoverlay")
+var popupsbox = document.querySelector(".popupsbox")
+var popupbutton = document.getElementById("addpopup-button")
+var popupboxes = document.querySelector(".popupbox")
+var cancelpopup =document.getElementById("cancelpopups")
+var addpopup = document.getElementById("adddpopups")
+var container = document.querySelector(".container")
+var titles = document.getElementById("popup-tittle")
+var notes = document.getElementById("popup-notes")
+var decription = document.getElementById("notes-dec")
+var deletepopup = document.getElementById("delete-button")
+
+popupbutton.addEventListener('click',function(){
+    popupoverlay.style.display="block"
+    popupsbox.style.display="block"
+})
+
+addpopup.addEventListener('click', function(event){
+    event.preventDefault()
+    var div = document.createElement("div")
+    div.setAttribute('class',"notes-container")
+    div.innerHTML = `<h1>${titles.value}</h1><h3>${notes.value}</h3><p>${decription.value}</p><button class="notes-button">Delete</button>`
+    container.append(div)
+    popupoverlay.style.display="none"
+    popupsbox.style.display="none"
+})
+
+cancelpopup.addEventListener("click",function(event){
+    event.preventDefault()
+    popupoverlay.style.display="none"
+    popupsbox.style.display="none"
+})
+
+deletepopup.addEventListener('click',function(){
+    if(confirm('Do you want to delete this record.. ?')){
+        var deletepopups = document.querySelector('.notes-container')
+        deletepopups.remove();
+    
+    }
+})
+
+
 
 // end-of to-dolist
 

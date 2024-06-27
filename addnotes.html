@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/Css/style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="./index.html"><i class="fa-regular fa-hand-point-left">Home</i></a>
+        <h2>Add notes</h2>
+    </div>
+    <div class="container">
+        <div class="notes-container">
+            <h1>Add notes</h1>
+            <h3>Morning notes :</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero corrupti ratione quam vero debitis cum
+                quos
+                consectetur ex saepe ut totam, aut eaque officiis repellendus doloribus nesciunt quisquam! Quam, error.
+            </p>
+            <button class="notes-button" id="delete-button">Delete</button>
+        </div>
+    </div>
+    <div class="popupoverlay"></div>
+    <div class="popupsbox">
+        <h1>Add new</h1>
+        <form>
+            <input type="text" name="tittle" id="popup-tittle" placeholder="add tittle">
+            <input type="text" name="notes" id="popup-notes" placeholder="add notes">
+            <textarea name="notes-dec" id="notes-dec" placeholder="decription...."></textarea>
+            <button class="popup-button" id="adddpopups">add</button>
+            <button class="popup-button" id="cancelpopups">Cancel</button>
+        </form>
+    </div>
+    <button class="addbutton" id="addpopup-button">+</button><br>
+
+    <h1>Popup button</h1>
+    <button class="adds" id="clicks">Click</button>
+    <button class="adds" onclick="show()">Show</button>
+    <div class="overlay"></div>
+    <div class="popupbox">
+        <p>Just Created a popup on while click button</p>
+        <button class="adds" onclick="closepopup()">close</button>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="mobile">Mobile</label>
+                        <input type="number" name="mobile" id="mobile">
+                    </div>
+                    <div>
+                        <input type="submit" value="submit">
+                        <input type="reset" value="reset">
+                    </div>
+                </form>
+            <td>
+                <table class="lists" id="storeList">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Mobile</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./javacript.js"></script>
+
+</body>
+
+</html>
