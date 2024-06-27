@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/Css/style.css">
+</head>
+
+<body>
+    <a href="./index.html"><i class="fa-regular fa-hand-point-left">Home</i></a>
+    <h1>Student Form</h1>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="mobile">Mobile</label>
+                        <input type="number" name="mobile" id="mobile">
+                    </div>
+                    <div>
+                        <input type="submit" value="submit">
+                        <input type="reset" value="reset">
+                    </div>
+                </form>
+            <td>
+                <table class="lists" id="storeList">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Mobile</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./javacript.js"></script>
+
+</body>
+
+</html>
