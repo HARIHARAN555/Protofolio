@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(125, 232, 236);
+}
+header{
+    text-align: center;
+}
+main{
+    background-color: aliceblue;
+    width: 50%;
+   margin-left: 25%;
+   border-radius: 10px;
+}
+form *{
+    padding: 5px;
+    margin: 10px;
+}
+input,textarea{
+    padding: 10px 60% 10px 10px ;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+.check{
+    cursor: pointer;
+}
+.fsubmit{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: royalblue;
+    color: wheat;
+    border: none;
+    cursor: pointer;
+}
+form label input,form input[type='radio']{
+    width: auto;
+}
+.d-flex{
+    display: flex;
+}
