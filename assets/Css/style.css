@@ -105,7 +105,15 @@ ul.hero_section--social-icons{
     background-color: var(--prmary);
     color:var(--dark-primary);
     border: 1px solid var(--prmary);
-    border-radius: 10px;
+    border-radius: 10px; 
+}
+.hero-buttons>a{
+    text-decoration: none;
+    color: var(--dark-primary);
+}
+.hero-buttons>a:hover{
+    background-color: var(--prmary);
+    color: #fff;
 }
 .hero-buttons:hover{
     background-color: var(--prmary);
