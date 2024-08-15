@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html>body{
+    background-color: rgb(173, 246, 175);
+}
+header{
+    padding: 10px;
+    text-align: center;
+    background-color: coral;
+    font-size: 20px;
+    font-weight: 600 bold;
+}
+header>span>a {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+header>span>a:hover {
+    color: white;
+}
+
+/* Main 2 tabel css */
+table {
+    margin: 5px auto;
+    border-spacing: 0;
+}
+tr>th{
+    padding: 10px;
+    border: 0.5px solid black;
+    font-size: 17px;
+}
+tr>td{
+    padding: 10px;
+    font-size: 15px;
+    border: 0.5px solid black;
+}
+tr>td>a{
+    text-decoration: none;
+    color: blueviolet;
+}
+tr.active{
+    background-color: rgb(220, 198, 241);
+}
+main{
+    text-align: center;
+    margin: 10px auto;
+    width: 50%;
+    border: none;
+}
+#food-container{
+    display: flex;
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 5px;
+    justify-content: space-between;
+    box-shadow: 5px 5px 10px rgb(9, 110, 115);
+}
+#food-input{
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    border-color: rgb(116, 116, 215);
+    border-radius: 10px;
+}
+#food-create{
+    margin: 10px;
+    padding: 10px;
+    width: 20%;
+    background-color: skyblue;
+    border: none;
+    border-radius: 5px;
+
+}
+section{
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f0f8ff;
+    text-align: center;
+    list-style: none;
+    box-shadow: 5px 5px 10px rgb(9, 110, 115);
+}
+#no-list{
+    color: grey;
+}
+#no-list img{
+    width: 240px;
+    opacity: 0.5;
+}
+.food-list-item{
+    padding: 5px;
+    border: 2px solid grey;
+    margin: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.food-list-item:hover{
+    background-color: rgb(194, 177, 232);
+}
+.alert{
+    padding: 10px;
+    text-align: left;
+    background-color: rgb(238, 232, 122);
+    width: 95%;
+    margin: 10px auto;
+    border-radius: 5px;
+    border-left: 5px solid black;
+}
+#resync{
+    margin: 10px;
+        padding: 10px;
+        width: 20%;
+        background-color: skyblue;
+        border: none;
+        border-radius: 5px;
+}
+
+
+
