@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-head{
+    background-color: #d2d1ed;
+    height: 350px;
+}
+.main-button{
+    list-style: none;
+    padding: 20px 10px;
+    justify-content: end;
+}
+#home{
+    text-align: left;
+}
+.main-button>li>a{
+    text-decoration: none;
+    color: black;
+    padding: 20px 10px;
+}
+.main-head_search{
+    text-align: center;
+    margin-top: 100px;
+}
+.main-head_search>input,button :focus{
+    outline: none; 
+}
+.main-head_search>input,button{
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+.main-head_search> input{
+    margin: 20px 10px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 15px;
+    position: relative;
+}
+.main-head_search>button{
+    padding: 10px 10px;
+}
+
+.main-body{
+    margin: 50px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgb(9, 110, 115);
+}
+.main-body>div{
+    /* margin-top: 20px; */
+    padding: 20px;
+}
+.main-body_table{
+    margin: 20px;
+    border-collapse: collapse;
+    width: 95%;
+
+}
+.main-body_table>tbody>tr>td{
+    border: 0.5px solid rgb(245, 167, 181);
+    padding: 20px;
+    width: 150px;
+    
+}
+.main-body_table>tbody>tr:hover{
+    font-weight: bold;
+    background-color: #d2d1ed;
+}
+.overflow{
+    overflow-y: scroll;
+    height: 250px;
+}
+
+.hidden{
+    display: none;
+}
+
+.d-flex{
+    display: flex;
+}

@@ -214,6 +214,7 @@ ul.hero_section--social-icons{
 .work-section_dec>ul>li>a{
     text-decoration: none;
     color: var(--prmary);
+    line-height: 25px;
 }
 .work-section_dec>ul>li>a:hover{
     color: #fff;
@@ -326,6 +327,7 @@ h1 {
 table.lists {
     text-align: center;
     width: 100%;
+    border-collapse: collapse;
 }
 
 #name,

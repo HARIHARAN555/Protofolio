@@ -90,6 +90,15 @@ resyncBt.addEventListener('click',()=>{
     duplicateEL.innerHTML="";
     const cloneDataLi = foodList.cloneNode(true);
     duplicateEL.append(cloneDataLi);
+    // remove item in local storages
+    // let fetchedFoodItems = [...JSON.parse(localStorage.getItem(localStorageItems))];
+
+    // fetchedFoodItems.forEach((item)=>{
+    //     if(item.foodItem === exitLI.innerText){
+    //         fetchedFoodItems.splice(fetchedFoodItems.indexOf(item),1);
+    //     }
+    // });
+    // localStorage.setItem(localStorageItems,JSON.stringify(fetchedFoodItems));
 })
 
 function removeItem(event){
